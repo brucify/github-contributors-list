@@ -6,10 +6,20 @@ Build awesome list of the contributors of your project! You can even filter your
 
 ## Usage
 
+First install the dependencies using npm: 
+
+```
+npm install minimist
+npm install q
+npm install merge
+npm install sprintf-js
+npm install marked
+```
+
 In order to get the contributors list for your open-source project use:
 
 ```bash
-githubcontrib --owner USERNAME --repo REPO_NAME --cols 6 --filter user1,user2,user3 | pbcopy
+./bin/githubcontrib --owner USERNAME --repo REPO_NAME --cols 6 --filter user1,user2,user3 | pbcopy
 ```
 
 ### Advanced API
